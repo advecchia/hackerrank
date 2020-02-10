@@ -17,7 +17,7 @@ Complete the stub code provided in your editor to print whether or not *n* is we
 A single line containing a positive integer, *n*.
 
 ## Constraints
-1 <= n <= 100
+* *1 <= n <= 100*
 
 ## Output Format
 Print *Weird* if the number is weird; otherwise, print *Not Weird*.
