@@ -18,3 +18,6 @@ Each line *i* of the *T* subsequent lines contain a String, *S*.
 
 ## Output Format
 For each String *Sj* (where *0 <= j <= T - 1*), print *Sj*'s even-indexed characters, followed by a space, followed by *Sj*'s odd-indexed characters.
+
+## Run
+> python3 solution.py

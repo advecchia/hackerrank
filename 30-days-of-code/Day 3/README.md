@@ -1,4 +1,4 @@
-# Day 3: Intro to Conditional Statements
+# [Day 3: Intro to Conditional Statements](https://www.hackerrank.com/challenges/30-conditional-statements/problem)
 
 ## Objective
 In this challenge, we're getting started with conditional statements. Check out the [Tutorial](https://www.hackerrank.com/challenges/30-conditional-statements/tutorial) tab for learning materials and an instructional video!
@@ -21,3 +21,6 @@ A single line containing a positive integer, *n*.
 
 ## Output Format
 Print *Weird* if the number is weird; otherwise, print *Not Weird*.
+
+## Run
+> python3 solution.py

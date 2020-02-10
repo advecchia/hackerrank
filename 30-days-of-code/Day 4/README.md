@@ -1,4 +1,4 @@
-# Day 4: Class vs. Instance
+# [Day 4: Class vs. Instance](https://www.hackerrank.com/challenges/30-class-vs-instance/problem)
 
 ## Objective
 In this challenge, we're going to learn about the difference between a class and an instance; because this is an Object Oriented concept, it's only enabled in certain languages. Check out the [Tutorial](https://www.hackerrank.com/challenges/30-class-vs-instance/tutorial) tab for learning materials and an instructional video!
@@ -29,3 +29,6 @@ The first line contains an integer, *T* (the number of test cases), and the *T* 
 
 ## Output Format
 Complete the method definitions provided in the editor so they meet the specifications outlined above; the code to test your work is already in the editor. If your methods are implemented correctly, each test case will print *2* or *3* lines (depending on whether or not a valid *initialAge* was passed to the constructor).
+
+## Run
+> python3 solution.py

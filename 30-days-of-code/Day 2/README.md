@@ -1,4 +1,4 @@
-# Day 2: Operators
+# [Day 2: Operators](https://www.hackerrank.com/challenges/30-operators/problem)
 
 ## Objective
 In this challenge, you'll work with arithmetic operators. Check out the [Tutorial](https://www.hackerrank.com/challenges/30-operators/tutorial) tab for learning materials and an instructional video!

@@ -1,4 +1,4 @@
-# Day 5: Loops
+# [Day 5: Loops](https://www.hackerrank.com/challenges/30-loops/problem)
 
 ## Objective
 In this challenge, we're going to use loops to help us do some simple math. Check out the [Tutorial](https://www.hackerrank.com/challenges/30-loops/tutorial) tab to learn more.
@@ -17,3 +17,6 @@ A single integer,*n*.
 
 Print *10* lines of output; each line *i* (where *1 <= i <= 10*) contains the *result* of *n x i* in the form:
 *n x i = result*.
+
+## Run
+> python3 solution.py
