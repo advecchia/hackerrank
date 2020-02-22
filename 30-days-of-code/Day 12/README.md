@@ -15,6 +15,7 @@ Complete the Student class by writing the following:
     4. An integer array (or vector) of test scores, *scores*.
 
 * A char calculate() method that calculates a Student object's average and returns the grade character representative of their calculated average:
+
 ![Grading Scale](grading_scale.png)
 
 ## Input Format
@@ -30,3 +31,6 @@ The first line contains *firstName*, *lastName*, and *id*, respectively. The sec
 
 ## Output Format
 This is handled by the locked stub code in your editor. Your output will be correct if your Student class constructor and calculate() method are properly implemented.
+
+## Run
+> python3 solution.py
