@@ -18,9 +18,20 @@ class Solution:
 
         return root
 
+    def __getHeigthAux(self, root):
+        if root is None:
+            return 0
+
+        return 1 + max(self.__getHeigthAux(root.left), self.__getHeigthAux(root.right))
+
     def getHeight(self, root):
-        #Write your code here
-        pass
+        """Find the highest path length on a binary search tree.
+
+        :param root: tree root node
+        :return: highest path length
+        """
+        return self.__getHeigthAux(root) - 1
+
 
 T = int(input())
 myTree = Solution()
