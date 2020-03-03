@@ -22,7 +22,28 @@ class Solution:
 
     def levelOrder(self, root):
         # Write your code here
-        pass
+        if root is None:
+            raise ValueError('Invalid tree to print.')
+
+        out_queue = [str(root.data)]
+        queue = [root.left, root.right]
+        while True:
+            # Validate queue
+            if len(queue) == 0:
+                break
+
+            # Remove and print nodes data
+            temp_queue = []
+            for node in queue:
+                if node is not None:
+                    out_queue.append(str(node.data))
+                    temp_queue.append(node.left)
+                    temp_queue.append(node.right)
+            queue.clear()
+
+            # Append new nodes
+            queue.extend(temp_queue)
+        print(' '.join(out_queue))
 
 
 T = int(input())
