@@ -10,12 +10,12 @@ class Solution:
             if head is None:
                 head = p
             elif head.next is None:
-                head.next=p
+                head.next = p
             else:
                 start = head
                 while start.next is not None:
                     start = start.next
-                start.next=p
+                start.next = p
 
             return head
 
@@ -26,8 +26,22 @@ class Solution:
             current = current.next
 
     def removeDuplicates(self, head):
-        # Write your code here
-        pass
+        if head is None:
+            raise ValueError('Invalid head for linked list')
+
+        current = head
+        while current is not None:
+            current_value = current.data
+            next_node = current.next
+            if next_node is None:
+                break
+
+            if current_value == next_node.data:
+                current.next = next_node.next
+            else:
+                current = next_node
+
+        return head
 
 
 mylist = Solution()
