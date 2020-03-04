@@ -12,35 +12,33 @@ class TestDataEmptyArray(object):
 
     @staticmethod
     def get_array():
+        return []
 
-
-# complete this function
 
 class TestDataUniqueValues(object):
 
     @staticmethod
     def get_array():
-
-    # complete this function
+        array = dict()
+        for i in range(0, 3):
+            # 0, 2, 4
+            array[i] = i * 2
+        return array
 
     @staticmethod
     def get_expected_result():
+        return 0
 
-
-# complete this function
 
 class TestDataExactlyTwoDifferentMinimums(object):
 
     @staticmethod
     def get_array():
-
-    # complete this function
+        return [2, 3, 1, 1]
 
     @staticmethod
     def get_expected_result():
-
-
-# complete this function
+        return 2
 
 
 def TestWithEmptyArray():
