@@ -1,5 +1,4 @@
 #!/bin/python3
-import itertools
 
 MIN_TEST_CASE_SIZE = 1
 MAX_TEST_CASE_SIZE = 10 ** 3
@@ -23,8 +22,11 @@ def validate_input_k_limit(input_k, input_n):
         raise ValueError('Invalid input k value')
 
 
-def build_bitwise_combination(input_k, input_n):
-    return [a & b for a, b in itertools.combinations(range(1, input_n + 1), 2) if a & b < input_k]
+def max_value(input_k, input_n):
+    if ((input_k - 1) | input_k) <= input_n:
+        return input_k - 1
+    else:
+        return input_k - 2
 
 
 if __name__ == '__main__':
@@ -41,8 +43,6 @@ if __name__ == '__main__':
         k = int(nk[1])
         validate_input_k_limit(k, n)
 
-        # bitwise_values = filter(lambda x: x < k, build_bitwise_combination(n))
-        # output.append(max(bitwise_values))
-        output.append(max(build_bitwise_combination(k, n)))
+        output.append(str(max_value(k, n)))
 
-    print('\n'.join(map(str, output)))
+    print('\n'.join(output))
