@@ -23,5 +23,8 @@ The second line contains *n* space-separated integers describing the colors *ar[
 ## Output Format
 Return the total number of matching pairs of socks that John can sell.
 
+## Create output path
+> export OUTPUT_PATH="$(pwd)/output.txt"
+
 ## Run
 > python3 solution.py
